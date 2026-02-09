@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tentang Malaka Project</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#181111", /* Slightly darker than provided #221010 for better contrast */
+                        "surface-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom utilities for editorial vibe */
+        .grayscale-img {
+            filter: grayscale(100%) contrast(110%);
+            transition: filter 0.5s ease;
+        }
+        .grayscale-img:hover {
+            filter: grayscale(0%) contrast(100%);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255,255,255,0.2);
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-gray-100 font-display min-h-screen flex flex-col overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- Navigation -->
+<header class="fixed top-0 left-0 w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-[#392828]">
+<div class="container mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight uppercase">Malaka Project</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors text-primary" href="#">Tentang</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Artikel</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Acara</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Donasi</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex bg-primary hover:bg-red-700 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-colors items-center gap-2 group">
+<span>Gabung</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="md:hidden text-2xl">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center px-4 overflow-hidden border-b border-[#392828]">
+<div class="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col gap-6 z-10">
+<div class="flex items-center gap-2 text-primary font-bold tracking-widest uppercase text-xs mb-2">
+<span class="w-8 h-[2px] bg-primary"></span>
+                        Est. 2023
+                    </div>
+<h1 class="text-5xl md:text-7xl xl:text-8xl font-black leading-[0.9] tracking-tighter uppercase">
+                        Tentang <br/>
+<span class="text-primary">Malaka</span> <br/>
+                        Project
+                    </h1>
+<p class="text-lg md:text-xl text-gray-400 max-w-xl leading-relaxed mt-4 border-l-2 border-primary/50 pl-6">
+                        Gerakan literasi digital dan pendidikan berpikir kritis untuk Indonesia. Kami hadir sebagai antitesis terhadap arus informasi yang dangkal.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative h-full min-h-[400px] flex items-center justify-center">
+<!-- Abstract graphic element -->
+<div class="absolute inset-0 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="relative w-full aspect-[4/5] overflow-hidden rounded-lg grayscale-img group">
+<img alt="Group of serious young people discussing in a dimly lit industrial style room" class="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105" data-alt="Black and white photo of a serious discussion group representing critical thinking" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDptIKxRjEGBeX-_TS8oKfKroH8GlrME7HFO24e7iJ7mjCFMRtCJwEF-p5ws87EYaEQVTXkEnoDAyWVQyn7KTk3pX_HoA0hIdoF4Gby1NL3HTsWEVLC7SxjytuPVcC3YbjnOfLZnvMdGk_JdpYUgk2MguQewwlD3OdSEmIEL8hxJMxVxB4lLSoNyOb5jzynMexgQpKfth4TdL-aYDagyi-4slu7TKul0OWLoBXY8UWUsPrXw31ASclf-sOmeWWPWhZG2ibQ5e2IWHmz"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
+<p class="text-white text-sm font-mono uppercase tracking-widest">Diskusi Publik Vol. 1</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who We Are (Founding) -->
+<section class="py-24 px-4 bg-surface-dark relative">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row gap-16 md:gap-24">
+<div class="md:w-1/3 sticky top-32 h-fit">
+<h2 class="text-4xl md:text-5xl font-bold uppercase leading-none tracking-tight mb-6">
+                            Siapa <br/><span class="text-gray-600 dark:text-gray-500">Kami?</span>
+</h2>
+<div class="h-1 w-20 bg-primary mb-8"></div>
+<p class="text-gray-400 text-sm font-mono">
+                            // THE ORIGIN STORY
+                        </p>
+</div>
+<div class="md:w-2/3 flex flex-col gap-12">
+<div class="prose dark:prose-invert prose-lg max-w-none">
+<p class="text-2xl font-medium leading-normal text-white mb-6">
+                                Lahir pada tahun 2023, Malaka Project bermula dari keresahan kolektif akan rendahnya literasi digital di tengah tsunami informasi.
+                            </p>
+<p class="text-gray-400">
+                                Di era di mana hoaks menyebar lebih cepat daripada fakta, dan sentimen mengalahkan argumen, kami memutuskan untuk berhenti mengeluh dan mulai bergerak. Kami bukan sekadar media; kami adalah laboratorium pemikiran.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-[#2a1d1d] p-8 rounded-lg border border-[#392828] hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 group-hover:scale-110 transition-transform">psychology</span>
+<h3 class="text-xl font-bold text-white mb-2">Berpikir Kritis</h3>
+<p class="text-gray-400 text-sm leading-relaxed">Melawan dogma dengan logika. Membedah informasi hingga ke akarnya.</p>
+</div>
+<div class="bg-[#2a1d1d] p-8 rounded-lg border border-[#392828] hover:border-primary/50 transition-colors group">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 group-hover:scale-110 transition-transform">diversity_3</span>
+<h3 class="text-xl font-bold text-white mb-2">Komunitas</h3>
+<p class="text-gray-400 text-sm leading-relaxed">Membangun ekosistem belajar yang inklusif namun tajam.</p>
+</div>
+</div>
+<div class="w-full h-80 rounded-lg overflow-hidden grayscale-img relative">
+<img alt="Close up of hands writing notes during a workshop" class="object-cover w-full h-full" data-alt="Black and white detail shot of hands taking notes representing education" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtrJtVVh3vwCdg-KoymJIQAQgc04AB3IRfj6KRQZEOvaXAcs7GgQWaZfHEWDVi3wU7I4fBvlt4q_WcUlVX_Tbz3HGBhJQOjlgyOy_cWLV8AAawJ-GUNXQPDtHGeHgTELUjCTpKoaZurWEWCL220G78PkQu8XIp5X20CpsTtGPyuHM_RIV-YbfCgOKJGPx3AitkVB2fjy0qb4cxsH37Ycyu4GxZobLi4aq7VR8KM0PYaXI0kN644T4D0_jClj-qGZ65Haf4EWUsCYZV"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inspiration (Tan Malaka) -->
+<section class="py-24 px-4 bg-background-dark border-t border-[#392828]">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Image/Portrait Side -->
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -inset-4 bg-primary/20 rounded-lg rotate-3 z-0"></div>
+<div class="relative z-10 aspect-[3/4] bg-[#1a1a1a] rounded-lg overflow-hidden border border-[#392828]">
+<img alt="Portrait of Tan Malaka" class="object-cover w-full h-full grayscale mix-blend-luminosity" data-alt="Historical portrait of Tan Malaka with high contrast filter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCndHLnrtNPnSjewVrqur8oYigglD80shljslzW-iWJsByhW9Q14FFeJSZgpQwnuUMIyDtHCAvvPleWMggnUlraC5qV0PEDcFuQfGpnskPDGvtStOiKKHgC9g3WCSmMSd135objHTLY38U_1E-nF1J3uqQxYGjkefv8b0oJiUAeExa1EDizVuYzl95xWuuAmmKBmUmAA1ZQyWQpc9gcLeNjsER8LJbwd_71i4WRFzOG2q2QjwdUHjz4l3dcekPR_ctNXW8FHSYjlzVz"/>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black to-transparent">
+<h3 class="text-white text-3xl font-bold uppercase">Tan Malaka</h3>
+<p class="text-primary font-mono text-sm mt-1">1897 - 1949</p>
+</div>
+</div>
+</div>
+<!-- Text Side -->
+<div class="order-1 lg:order-2">
+<div class="flex items-center gap-4 mb-6">
+<span class="h-[1px] w-12 bg-gray-500"></span>
+<span class="text-gray-400 uppercase tracking-widest text-sm font-bold">Inspirasi Kami</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-black uppercase text-white mb-8 leading-tight">
+                            Semangat <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-900">Madilog</span>
+</h2>
+<blockquote class="text-xl md:text-2xl font-light text-gray-300 italic mb-8 border-l-4 border-primary pl-6 py-2">
+                            "Tujuan pendidikan itu untuk mempertajam kecerdasan, memperkukuh kemauan serta memperhalus perasaan."
+                        </blockquote>
+<p class="text-gray-400 mb-6 leading-relaxed">
+                            Kami mengambil nama dari Tan Malaka bukan untuk mengkultuskan sosoknya, melainkan untuk merawat apinya. Filosofi <strong>Madilog (Materialisme, Dialektika, Logika)</strong> menjadi landasan kami dalam memandang dunia: realistis, dinamis, dan masuk akal.
+                        </p>
+<button class="text-white border-b border-primary pb-1 hover:text-primary transition-colors text-sm font-bold uppercase tracking-wide">
+                            Pelajari Filosofi Madilog
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision -->
+<section class="py-32 px-4 bg-primary text-white text-center relative overflow-hidden">
+<!-- Background Pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="container mx-auto relative z-10 max-w-4xl">
+<span class="material-symbols-outlined text-6xl mb-6 opacity-80">visibility</span>
+<h2 class="text-xs font-bold uppercase tracking-[0.2em] mb-4 opacity-80">Visi Kami</h2>
+<p class="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+                    "Menciptakan generasi Indonesia yang berdaulat secara intelektual, bebas dari pembodohan, dan berani bersuara di atas landasan logika."
+                </p>
+</div>
+</section>
+<!-- Mission -->
+<section class="py-24 px-4 bg-background-light dark:bg-background-dark">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">Misi Kami</h2>
+<p class="text-gray-500 mt-2 max-w-md">Langkah konkret yang kami ambil setiap hari untuk mewujudkan visi.</p>
+</div>
+<div class="h-[1px] flex-1 bg-gray-200 dark:bg-[#392828] mx-8 mb-2 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Mission 1 -->
+<div class="group relative p-8 bg-white dark:bg-[#221a1a] border border-gray-200 dark:border-[#392828] rounded-xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary rotate-12">school</span>
+</div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Edukasi Radikal</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Menyediakan konten edukatif yang mendalam, berani, dan menantang status quo pemikiran mainstream.
+                        </p>
+<div class="mt-6 w-8 h-1 bg-gray-200 dark:bg-[#392828] group-hover:w-full group-hover:bg-primary transition-all duration-500"></div>
+</div>
+<!-- Mission 2 -->
+<div class="group relative p-8 bg-white dark:bg-[#221a1a] border border-gray-200 dark:border-[#392828] rounded-xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary -rotate-12">forum</span>
+</div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">record_voice_over</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Diskursus Terbuka</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Menciptakan ruang aman untuk perdebatan ide yang keras namun tetap beradab dan logis.
+                        </p>
+<div class="mt-6 w-8 h-1 bg-gray-200 dark:bg-[#392828] group-hover:w-full group-hover:bg-primary transition-all duration-500"></div>
+</div>
+<!-- Mission 3 -->
+<div class="group relative p-8 bg-white dark:bg-[#221a1a] border border-gray-200 dark:border-[#392828] rounded-xl hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary">rocket_launch</span>
+</div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">handshake</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors">Aksi Nyata</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                            Berkolaborasi dengan institusi dan komunitas untuk membawa literasi digital ke akar rumput.
+                        </p>
+<div class="mt-6 w-8 h-1 bg-gray-200 dark:bg-[#392828] group-hover:w-full group-hover:bg-primary transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-4 border-t border-[#392828]">
+<div class="container mx-auto max-w-4xl text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Jangan Hanya Menjadi Penonton</h2>
+<p class="text-gray-400 mb-8 max-w-2xl mx-auto">Bergabunglah dengan ribuan pemuda lainnya dalam gerakan intelektual ini. Mari berdiskusi, belajar, dan tumbuh bersama.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
+<span>Gabung Komunitas</span>
+<span class="material-symbols-outlined">group_add</span>
+</button>
+<button class="bg-transparent border border-[#392828] hover:border-white text-white font-bold py-3 px-8 rounded-lg transition-colors">
+                        Hubungi Kami
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#110c0c] border-t border-[#392828] py-12 px-4 text-sm">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-xs">
+<div class="flex items-center gap-2 mb-4 text-white">
+<span class="material-symbols-outlined">bolt</span>
+<span class="font-bold uppercase tracking-tight">Malaka Project</span>
+</div>
+<p class="text-gray-500 leading-relaxed">
+                        Menyalakan lilin di tengah kegelapan informasi. Independent, Critical, Progressive.
+                    </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full md:w-auto">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white uppercase tracking-wider text-xs">Menu</h4>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Tentang</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Artikel</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Acara</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white uppercase tracking-wider text-xs">Social</h4>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">YouTube</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white uppercase tracking-wider text-xs">Legal</h4>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-[#392828] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-600">© 2023 Malaka Project. All rights reserved.</p>
+<p class="text-gray-600 flex items-center gap-1">
+                    Made with <span class="material-symbols-outlined text-xs text-primary">favorite</span> in Indonesia
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

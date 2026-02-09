@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Malaka Project</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010", // Deep dark reddish-brown/black for warmth
+                        "surface-dark": "#181111", // Slightly lighter for contrast
+                        "border-dark": "#543b3b",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                        "mono": ["Space Grotesk", "monospace"], // Using Space Grotesk for mono feel as requested
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden min-h-screen flex flex-col">
+<!-- Top Navigation -->
+<header class="w-full bg-surface-dark border-b border-[#392828] sticky top-0 z-50">
+<div class="max-w-[1280px] mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined !text-[32px]">public</span>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Malaka Project</h2>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<div class="flex items-center gap-8">
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Beranda</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Tentang Kami</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Program</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Artikel</a>
+<a class="text-white text-sm font-medium transition-colors border-b-2 border-primary" href="#">Kontak</a>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-red-700 text-white text-sm font-bold transition-all">
+<span>Masuk</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1280px] mx-auto px-6 py-12 lg:py-20">
+<!-- Hero Title -->
+<div class="mb-16 border-b border-border-dark pb-8">
+<h1 class="text-5xl lg:text-7xl font-black leading-[0.9] tracking-[-0.03em] mb-4 uppercase">
+                Terlibat <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Bersama Kami</span>
+</h1>
+<p class="text-[#ba9c9c] text-lg lg:text-xl font-normal max-w-2xl mt-6">
+                Bergabung dalam gerakan berpikir kritis. Kami membuka ruang kolaborasi untuk individu, komunitas, dan media yang ingin membawa perubahan.
+            </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+<!-- Left Column: Interactive Form -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Tabs -->
+<div class="flex flex-wrap gap-8 border-b border-border-dark">
+<button class="pb-4 border-b-4 border-white text-white font-bold text-lg tracking-tight hover:text-gray-200 transition-colors">
+                        Kolaborasi
+                    </button>
+<button class="pb-4 border-b-4 border-transparent text-[#ba9c9c] font-bold text-lg tracking-tight hover:text-white hover:border-border-dark transition-all">
+                        Komunitas
+                    </button>
+<button class="pb-4 border-b-4 border-transparent text-[#ba9c9c] font-bold text-lg tracking-tight hover:text-white hover:border-border-dark transition-all">
+                        Media
+                    </button>
+</div>
+<!-- Form -->
+<form class="flex flex-col gap-6 mt-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2 group">
+<label class="text-xs font-bold tracking-widest text-[#ba9c9c] uppercase">Nama Lengkap</label>
+<input class="w-full bg-transparent border border-border-dark rounded-lg p-4 text-white placeholder-white/20 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-mono" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="text-xs font-bold tracking-widest text-[#ba9c9c] uppercase">Email</label>
+<input class="w-full bg-transparent border border-border-dark rounded-lg p-4 text-white placeholder-white/20 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-mono" placeholder="nama@email.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="text-xs font-bold tracking-widest text-[#ba9c9c] uppercase">Organisasi / Institusi</label>
+<input class="w-full bg-transparent border border-border-dark rounded-lg p-4 text-white placeholder-white/20 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-mono" placeholder="Nama Organisasi" type="text"/>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="text-xs font-bold tracking-widest text-[#ba9c9c] uppercase">Jenis Kolaborasi</label>
+<div class="relative">
+<select class="w-full bg-surface-dark border border-border-dark rounded-lg p-4 text-white appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all cursor-pointer font-mono">
+<option>Speaker / Narasumber</option>
+<option>Partnership Event</option>
+<option>Research Collaboration</option>
+<option>Lainnya</option>
+</select>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#ba9c9c]">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2 group">
+<label class="text-xs font-bold tracking-widest text-[#ba9c9c] uppercase">Pesan / Proposal</label>
+<textarea class="w-full bg-transparent border border-border-dark rounded-lg p-4 text-white placeholder-white/20 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all font-mono resize-none" placeholder="Ceritakan detail rencana kolaborasi anda..." rows="6"></textarea>
+</div>
+<div class="pt-4">
+<button class="group relative inline-flex w-full md:w-auto items-center justify-center gap-3 overflow-hidden rounded-lg bg-primary px-10 py-4 font-bold text-white transition-all hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#181111]" type="button">
+<span class="text-base uppercase tracking-wider">Kirim Pesan</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Right Column: Sidebar Info -->
+<div class="lg:col-span-4 flex flex-col gap-10">
+<!-- Info Cards -->
+<div class="bg-surface-dark border border-border-dark rounded-xl p-8 flex flex-col gap-8">
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary">
+<span class="material-symbols-outlined">mail</span>
+<h3 class="text-white font-bold uppercase tracking-wide text-sm">Email Umum</h3>
+</div>
+<a class="text-gray-300 hover:text-white transition-colors text-lg break-all" href="mailto:hello@malakaproject.com">hello@malakaproject.com</a>
+</div>
+<div class="w-full h-px bg-border-dark"></div>
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+<h3 class="text-white font-bold uppercase tracking-wide text-sm">Alamat Kantor</h3>
+</div>
+<p class="text-gray-300 text-lg leading-relaxed">
+                            Jakarta HQ, Indonesia<br/>
+                            Jl. Senopati No. 12<br/>
+                            Jakarta Selatan, 12190
+                        </p>
+</div>
+<div class="w-full h-px bg-border-dark"></div>
+<div>
+<div class="flex items-center gap-3 mb-2 text-primary">
+<span class="material-symbols-outlined">schedule</span>
+<h3 class="text-white font-bold uppercase tracking-wide text-sm">Jam Operasional</h3>
+</div>
+<p class="text-gray-300 text-lg">
+                            Senin - Jumat<br/>
+                            09:00 - 17:00 WIB
+                        </p>
+</div>
+</div>
+<!-- Social Links -->
+<div class="flex flex-col gap-4">
+<p class="text-sm font-bold text-[#ba9c9c] uppercase tracking-widest">Social Media</p>
+<div class="flex flex-wrap gap-3">
+<a class="flex items-center justify-center size-12 rounded-full bg-surface-dark border border-border-dark text-white hover:bg-primary hover:border-primary transition-all group" href="#">
+<!-- Twitter Icon SVG -->
+<svg class="size-5 fill-current" viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</a>
+<a class="flex items-center justify-center size-12 rounded-full bg-surface-dark border border-border-dark text-white hover:bg-primary hover:border-primary transition-all group" href="#">
+<!-- Instagram Icon SVG -->
+<svg class="size-5 fill-current" viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+<a class="flex items-center justify-center size-12 rounded-full bg-surface-dark border border-border-dark text-white hover:bg-primary hover:border-primary transition-all group" href="#">
+<!-- Youtube Icon SVG -->
+<svg class="size-5 fill-current" viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<path d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"></path>
+</svg>
+</a>
+<a class="flex items-center justify-center size-12 rounded-full bg-surface-dark border border-border-dark text-white hover:bg-primary hover:border-primary transition-all group" href="#">
+<!-- Linkedin Icon SVG replacement using material symbol since brand icon unavailable -->
+<span class="material-symbols-outlined">group</span>
+</a>
+</div>
+</div>
+<!-- Small Editorial Box -->
+<div class="mt-auto bg-[#392828] p-6 rounded-xl border border-[#543b3b]">
+<span class="material-symbols-outlined text-primary mb-2">format_quote</span>
+<p class="text-white font-medium text-sm italic leading-relaxed">
+                        "Kebenaran bukanlah sesuatu yang kita miliki, tetapi sesuatu yang kita cari bersama."
+                    </p>
+<p class="text-[#ba9c9c] text-xs mt-2 font-bold uppercase">— Malaka Manifesto</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-border-dark bg-surface-dark py-8">
+<div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[#ba9c9c] text-sm">© 2024 Malaka Project. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#ba9c9c] hover:text-white text-sm transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#ba9c9c] hover:text-white text-sm transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

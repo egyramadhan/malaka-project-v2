@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Malaka Project - Pemikiran &amp; Diskusi</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#181111", /* Matching the provided component bg */
+                        "surface-dark": "#221616",
+                        "border-dark": "#392828",
+                        "text-muted": "#ba9c9c"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for filter section */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-dark bg-background-dark/95 backdrop-blur-md px-4 md:px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<!-- Logo SVG kept as unique brand element -->
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-tight hidden md:block">Malaka Project</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-9">
+<a class="text-text-muted hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Beranda</a>
+<a class="text-white text-sm font-bold leading-normal border-b-2 border-primary pb-0.5" href="#">Artikel</a>
+<a class="text-text-muted hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Media &amp; Diskusi</a>
+<a class="text-text-muted hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Kelas</a>
+<a class="text-text-muted hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Toko</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-border-dark group-focus-within:border-primary transition-colors">
+<div class="text-text-muted flex bg-surface-dark items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg rounded-l-none text-white focus:outline-0 focus:ring-0 border-none bg-surface-dark focus:border-none h-full placeholder:text-text-muted px-2 pl-2 text-sm font-normal leading-normal" placeholder="Cari topik..."/>
+</div>
+</label>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-red-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-[0_0_15px_rgba(242,13,13,0.3)]">
+<span class="truncate">Masuk</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-20 py-8">
+<!-- Hero Title -->
+<section class="flex flex-col gap-4 mb-10 mt-4 border-b border-border-dark pb-10">
+<div class="flex flex-wrap justify-between items-end gap-6">
+<div class="flex flex-col gap-2 max-w-2xl">
+<h1 class="text-white text-5xl md:text-7xl font-black leading-[0.9] tracking-[-0.04em] uppercase">
+                            Pemikiran <span class="text-primary">&amp;</span><br/>Diskusi
+                        </h1>
+<p class="text-text-muted text-lg md:text-xl font-normal leading-relaxed max-w-xl mt-4">
+                            Mengasah nalar kritis melalui konten edukasi dan diskursus publik yang mendalam dan berani.
+                        </p>
+</div>
+<div class="flex gap-2">
+<div class="h-px w-24 bg-primary self-end mb-2 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- Filters -->
+<section class="flex gap-3 mb-10 overflow-x-auto hide-scrollbar pb-2 sticky top-[70px] z-40 bg-background-dark/90 backdrop-blur-sm py-2 -mx-4 px-4 md:-mx-0 md:px-0">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full border border-primary bg-primary px-5 transition-all hover:scale-105 active:scale-95">
+<p class="text-white text-sm font-bold uppercase tracking-wide">Semua</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full border border-border-dark bg-surface-dark px-5 hover:border-text-muted hover:bg-[#2a1c1c] transition-all">
+<p class="text-text-muted text-sm font-medium uppercase tracking-wide">Sosial</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full border border-border-dark bg-surface-dark px-5 hover:border-text-muted hover:bg-[#2a1c1c] transition-all">
+<p class="text-text-muted text-sm font-medium uppercase tracking-wide">Politik</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full border border-border-dark bg-surface-dark px-5 hover:border-text-muted hover:bg-[#2a1c1c] transition-all">
+<p class="text-text-muted text-sm font-medium uppercase tracking-wide">Ekonomi</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full border border-border-dark bg-surface-dark px-5 hover:border-text-muted hover:bg-[#2a1c1c] transition-all">
+<p class="text-text-muted text-sm font-medium uppercase tracking-wide">Pendidikan</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full border border-border-dark bg-surface-dark px-5 hover:border-text-muted hover:bg-[#2a1c1c] transition-all">
+<p class="text-text-muted text-sm font-medium uppercase tracking-wide">Filsafat</p>
+</button>
+</section>
+<!-- Featured Content -->
+<section class="mb-16">
+<div class="group relative flex flex-col md:flex-row items-stretch overflow-hidden rounded-xl bg-surface-dark border border-border-dark hover:border-primary/50 transition-colors duration-300">
+<div class="relative w-full md:w-3/5 aspect-video md:aspect-auto overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="People discussing in a dark room with dramatic lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-rrj-xkB1qoI097g8FlZHPN1B4w988SY5nBmhLGhG54uZBQVfxKpnkLWJS4EaiJMYgJLL7MdEk3JtulbTUu3oFGFJDYUyMIZKSwpCG44WGAjj6F4OEc4_0amlSYihz0UhmyxXLz-vXc0-Jkyz25p3kCoSVoCUCNv736kAHIs2Oa5KrOfclk5dhsfOMmbDCglcCkCtJJfDqFrkU5PtO-5Aftm7_yHv8HPH0-6ZbwBdyIU5gq33yr2Cx-Bh7Js0PjvDvYXVs9dbhZtM');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent md:bg-gradient-to-r md:from-transparent md:to-surface-dark"></div>
+<!-- Play Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center backdrop-blur-sm shadow-[0_0_30px_rgba(242,13,13,0.4)]">
+<span class="material-symbols-outlined text-white text-4xl ml-1">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="relative flex w-full md:w-2/5 flex-col justify-center p-6 md:p-10 lg:p-12 gap-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold tracking-wider uppercase border border-primary/20">Politik</span>
+<span class="text-text-muted text-xs font-medium uppercase tracking-wide">• Featured</span>
+</div>
+<h3 class="text-white text-3xl lg:text-4xl font-bold leading-[1.1] tracking-[-0.02em] group-hover:text-primary transition-colors">
+                            Mengapa Demokrasi Butuh Oposisi Kuat?
+                        </h3>
+<p class="text-text-muted text-base line-clamp-3">
+                            Dalam episode spesial ini, kita membedah peran vital oposisi dalam menjaga keseimbangan kekuasaan dan mencegah tirani mayoritas dalam sistem demokrasi modern.
+                        </p>
+<div class="flex items-center gap-4 mt-4 pt-4 border-t border-border-dark/50">
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span class="text-xs font-medium">12 Okt 2023</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span class="text-xs font-medium">45 Min</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider with Label -->
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary">grid_view</span>
+<h3 class="text-xl font-bold text-white uppercase tracking-wider">Terbaru</h3>
+<div class="h-px bg-border-dark flex-grow ml-2"></div>
+</div>
+<!-- Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+<!-- Card 1 -->
+<a class="group flex flex-col gap-3 group" href="#">
+<div class="relative aspect-video w-full overflow-hidden rounded-lg border border-border-dark group-hover:border-primary/50 transition-colors">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Abstract financial charts and coins representing economy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCb2Vg4WKshR35E35nMvljfkAoEx9ZrlIoQEYpvrMWbSJkXxgb0H7UJSPJpc_DYHFtgC6lMVEaB5JOYjjOAul-Eq-rZhj9bM3wj9bKkDsUGYSoKXRMQCDKUcRVEMBKY2SIiQiC3JlGX9QYw11H5P0Mb4cQKUDTgxy6qgcye6Rd7k9xsuTFmtV3pHk5V94Rm2Rpzb9u4qDqaBBt7TkPs77aHnwsyQ1kaM_FQKfth8NvV6GpFE4jGSeUcjHa6KsU7Tsh5oBuo65FerI-s');"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+<div class="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">20:15</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Ekonomi</span>
+<span class="text-text-muted text-xs">2 Hari lalu</span>
+</div>
+<h4 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                            Ilusi Kebebasan Finansial di Era Gig Economy
+                        </h4>
+<p class="text-text-muted text-sm line-clamp-2 mt-1">Apakah kerja freelance benar-benar membebaskan atau justru bentuk eksploitasi baru?</p>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group flex flex-col gap-3" href="#">
+<div class="relative aspect-video w-full overflow-hidden rounded-lg border border-border-dark group-hover:border-primary/50 transition-colors">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A classroom setting with a chalkboard focusing on education" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3zZXZ5MJ1-AzuRuPqm9tYRMZj2CJijFhka37Jj25Sv-9EGHu1TTFbeAEi8oqxEC_IyGFI6NQcm7aWvKDMmj3MzvpQcivykQ9vW8k3a9todm4IjMrnUBpg1UzmxHauSOGhfJqeaJQSRr_Qo0jnm-odk5vTb8tiWqouiPPVPe2YUJxjZrnwu32jlz2CDK33W-mbRJ86bdHDbPtajUQNolyrxi1KCMe2qEJutQ004EyYh6M6ANV1encFK8EbpihYeKoSm0SzCGpWhfzJ');"></div>
+<div class="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">32:40</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Pendidikan</span>
+<span class="text-text-muted text-xs">5 Hari lalu</span>
+</div>
+<h4 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                            Pendidikan vs Pengajaran: Mana yang Hilang?
+                        </h4>
+<p class="text-text-muted text-sm line-clamp-2 mt-1">Refleksi sistem pendidikan kita yang lebih fokus pada nilai daripada karakter.</p>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group flex flex-col gap-3" href="#">
+<div class="relative aspect-video w-full overflow-hidden rounded-lg border border-border-dark group-hover:border-primary/50 transition-colors">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A pile of old books representing history and debt" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHVhbAL05MqYes14MeWlNjE1lgxkjcRZj1O0Wzzl3zu0OPsx2mnVKIFwo7bByDCRPjf5SkEpstyQvGkLE5EZqniSft67u5tihTWzsfJWWplCnDzMPu6UuPPMcJRuinMyl45xnKNbok8DDS0fZotkzg8DMOROroT7h3Sl-JdDbSc6wr0NydT0F9ZPvwfs8IjPpOZ4dP5umqszBB1bmWL2HZw-Td9JtWb6Y3UKcaN6mZgjyjT4jqWA4NLkecUCjMEqkQJ3sCbhiPQmH5');"></div>
+<div class="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">50:00</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Politik</span>
+<span class="text-text-muted text-xs">1 Minggu lalu</span>
+</div>
+<h4 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                            Sejarah Utang Negara dan Beban Generasi
+                        </h4>
+<p class="text-text-muted text-sm line-clamp-2 mt-1">Bagaimana utang negara hari ini akan dibayar oleh anak cucu kita besok.</p>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="group flex flex-col gap-3" href="#">
+<div class="relative aspect-video w-full overflow-hidden rounded-lg border border-border-dark group-hover:border-primary/50 transition-colors">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Statue representing Stoic philosophy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDoZFh2eGC5trEcvMFURtFJZA5TaYzmClf8wmAPDv0flC27NDxxXyKQWeuA4QlSTn9WeKLGcVS5r36pe0dwpM__DKb-GRhF-7HMU-Ml86DcWzNVZbWwOxHLsFxFfyjbCr8WuiJlsmOG9gXLmH7LfTnkcPbi71y1xkOD1rppsRrdrLDy3jlUlhm_ew1j_hTJsb_qTU7KeJiieRn4D8eezurExeezsciBNz3GsYFdAQEvUxnE0eI9jXr-1Try3Q2UqnZi_a9tl2AVMbV-');"></div>
+<div class="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">15:30</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Filsafat</span>
+<span class="text-text-muted text-xs">2 Minggu lalu</span>
+</div>
+<h4 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                            Filsafat Stoikisme untuk Manusia Modern
+                        </h4>
+<p class="text-text-muted text-sm line-clamp-2 mt-1">Mengapa ajaran kuno ini semakin relevan di tengah hiruk pikuk media sosial.</p>
+</div>
+</a>
+<!-- Card 5 -->
+<a class="group flex flex-col gap-3" href="#">
+<div class="relative aspect-video w-full overflow-hidden rounded-lg border border-border-dark group-hover:border-primary/50 transition-colors">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Digital art visualization representing AI" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5z9vIJSbrXNfK3Q_bImV8414_hQytv50IF0XMDKdnqQFlRJnNZO08fU7wcH-gP4RpKgkc0R6n-Wb48HgKUxM_0-N1IzS2DcdekD5WNBjdviJvHmVh5uFwMyTs4omNki202rBhqApEHaAevUE6b8-WLrZx0vKoA157KhiKRMfT1Vr8J3xtz3tfsd15YcZu1rSei7U_fg3iwuRzJnrSxHa0PBrbsPeCM2KgGZOURhB_G81gyTwU2UiI9jHF_YRjB-IlPFOlsPrZRCIA');"></div>
+<div class="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">28:10</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Teknologi</span>
+<span class="text-text-muted text-xs">2 Minggu lalu</span>
+</div>
+<h4 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                            Dampak AI pada Seni dan Kreativitas
+                        </h4>
+<p class="text-text-muted text-sm line-clamp-2 mt-1">Apakah AI akan membunuh seniman atau menjadi alat baru?</p>
+</div>
+</a>
+<!-- Card 6 -->
+<a class="group flex flex-col gap-3" href="#">
+<div class="relative aspect-video w-full overflow-hidden rounded-lg border border-border-dark group-hover:border-primary/50 transition-colors">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Open book with glasses representing logic and fallacy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrKX9oYnIQEss7DTKrnPut5AxGknuSzotIt-JcVRT1fGb0n2bN3GfJlRG7ZZyh3GDYXTWV0jagWf21e6QzQP4QdoKqNDa4ZFpgNS-ukQQZrVAXnLjAu7Q55_h9yM8-2IJM75bx9lfEhuVGPEF2TZ0pzhtkegow5xrWZ6b5wQodujqKAGJSaqMD5Rgne3x8pQCUxeEiuK293cZGXDE5dqwNaIMmo6CQLuIdEB6u8JWFdoA2eQqFRGNTNBARbFpaSvpPmPoDjC6HQ5iB');"></div>
+<div class="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">40:05</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Edukasi</span>
+<span class="text-text-muted text-xs">3 Minggu lalu</span>
+</div>
+<h4 class="text-white text-xl font-bold leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                            Logika Dasar: Mengenal Logical Fallacy
+                        </h4>
+<p class="text-text-muted text-sm line-clamp-2 mt-1">Panduan praktis agar tidak sesat pikir dalam berargumentasi.</p>
+</div>
+</a>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center mt-16">
+<button class="w-full md:w-auto min-w-[200px] border border-border-dark text-white hover:border-primary hover:text-primary bg-transparent py-3 px-8 rounded-lg font-bold transition-all text-sm uppercase tracking-widest">
+                    Muat Lebih Banyak
+                </button>
+</div>
+<!-- Newsletter Block -->
+<section class="mt-20 mb-8 rounded-2xl bg-primary p-8 md:p-12 relative overflow-hidden">
+<!-- Decorative Pattern -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-16 -mb-16 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div class="max-w-xl">
+<h3 class="text-white text-3xl font-black leading-tight tracking-tight mb-2">Jangan Tertinggal Diskusi.</h3>
+<p class="text-white/90 text-lg">Dapatkan analisis mingguan dan jadwal diskusi terbaru langsung di inbox Anda.</p>
+</div>
+<div class="w-full md:w-auto flex-1 max-w-md">
+<form class="flex flex-col sm:flex-row gap-3">
+<input class="w-full px-5 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:bg-white/20 focus:border-white transition-colors" placeholder="Alamat email anda" required="" type="email"/>
+<button class="bg-black text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-900 transition-colors whitespace-nowrap" type="submit">
+                                Berlangganan
+                            </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-border-dark py-12 px-4 md:px-10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between gap-10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-bold text-lg">Malaka Project</span>
+</div>
+<p class="text-text-muted text-sm max-w-xs">Membangun masyarakat yang berpikir kritis dan berdaya melalui pendidikan alternatif.</p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div>
+<h4 class="text-white font-bold mb-4">Konten</h4>
+<ul class="flex flex-col gap-2 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Artikel</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Video</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Podcast</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Program</h4>
+<ul class="flex flex-col gap-2 text-sm text-text-muted">
+<li><a class="hover:text-primary transition-colors" href="#">Kelas Diskusi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Workshop</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Komunitas</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Sosial</h4>
+<div class="flex gap-4">
+<a class="text-text-muted hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">smart_display</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-border-dark flex flex-col md:flex-row justify-between items-center text-xs text-text-muted">
+<p>© 2023 Malaka Project. All rights reserved.</p>
+<div class="flex gap-4 mt-2 md:mt-0">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
