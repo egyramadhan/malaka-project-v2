@@ -73,7 +73,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-600 text-xs text-center md:text-left">© 2024 Malaka Project. All rights reserved.</p>
+                    <p className="text-gray-600 text-xs text-center md:text-left">© 2026 Malaka Project. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="#" className="text-gray-600 hover:text-white text-xs">Privacy Policy</Link>
                         <Link href="#" className="text-gray-600 hover:text-white text-xs">Terms of Service</Link>
