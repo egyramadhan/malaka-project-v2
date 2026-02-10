@@ -139,7 +139,7 @@ export default function ImpactPage() {
 
                             {/* Interactive SVG Map */}
                             <div className="absolute inset-0 p-8">
-                                <IndonesiaMap className="text-[#333] opacity-80" />
+                                <IndonesiaMap />
                             </div>
                         </div>
                     </div>
