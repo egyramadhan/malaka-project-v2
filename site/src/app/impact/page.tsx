@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import IndonesiaMap from "@/components/IndonesiaMap";
+import CountUp from "@/components/CountUp";
 
 export default function ImpactPage() {
     return (
@@ -57,7 +58,9 @@ export default function ImpactPage() {
                             </div>
                             <div>
                                 <p className="text-[#ba9c9c] text-sm font-medium uppercase tracking-wider mb-2">Kolaborasi Kampus</p>
-                                <h3 className="text-[clamp(3rem,10vw,8rem)] font-bold text-white tracking-tighter leading-[0.9]">50+</h3>
+                                <h3 className="text-[clamp(3rem,10vw,8rem)] font-bold text-white tracking-tighter leading-[0.9]">
+                                    <CountUp end={50} suffix="+" />
+                                </h3>
                                 <p className="text-sm text-[#ba9c9c] mt-4">Universitas dan institusi pendidikan di seluruh Indonesia.</p>
                             </div>
                         </div>
@@ -69,7 +72,9 @@ export default function ImpactPage() {
                             </div>
                             <div>
                                 <p className="text-[#ba9c9c] text-sm font-medium uppercase tracking-wider mb-2">Diskusi Publik</p>
-                                <h3 className="text-[clamp(3rem,10vw,8rem)] font-bold text-white tracking-tighter leading-[0.9]">150+</h3>
+                                <h3 className="text-[clamp(3rem,10vw,8rem)] font-bold text-white tracking-tighter leading-[0.9]">
+                                    <CountUp end={150} suffix="+" />
+                                </h3>
                                 <p className="text-sm text-[#ba9c9c] mt-4">Ruang dialektika terbuka untuk umum, online dan offline.</p>
                             </div>
                         </div>
@@ -81,7 +86,9 @@ export default function ImpactPage() {
                             </div>
                             <div>
                                 <p className="text-[#ba9c9c] text-sm font-medium uppercase tracking-wider mb-2">Anggota Komunitas</p>
-                                <h3 className="text-[clamp(3rem,10vw,8rem)] font-bold text-white tracking-tighter leading-[0.9]">10k</h3>
+                                <h3 className="text-[clamp(3rem,10vw,8rem)] font-bold text-white tracking-tighter leading-[0.9]">
+                                    <CountUp end={10} suffix="k" />
+                                </h3>
                                 <p className="text-sm text-[#ba9c9c] mt-4">Pemikir kritis yang aktif berdiskusi dalam ekosistem Malaka.</p>
                             </div>
                         </div>

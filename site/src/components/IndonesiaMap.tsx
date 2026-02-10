@@ -31,7 +31,7 @@ const IndonesiaMap: React.FC<IndonesiaMapProps> = ({ className = "" }) => {
             />
 
             {/* Pulse Points based on locations */}
-            {locations.map((loc, index) => (
+            {locations.map((loc) => (
                 <div
                     key={loc.name}
                     className="absolute"
