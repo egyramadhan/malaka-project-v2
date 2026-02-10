@@ -27,7 +27,7 @@ const IndonesiaMap: React.FC<IndonesiaMapProps> = ({ className = "" }) => {
             <img
                 src="/id.svg"
                 alt="Indonesia Map"
-                className="w-full h-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-500"
+                className="w-full h-full object-contain opacity-60 hover:opacity-100 transition-opacity duration-500"
             />
 
             {/* Pulse Points based on locations */}
