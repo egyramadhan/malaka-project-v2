@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import IndonesiaMap from "@/components/IndonesiaMap";
 
 export default function ImpactPage() {
     return (
@@ -128,55 +129,10 @@ export default function ImpactPage() {
                         <div className="flex-1 relative min-h-[400px] rounded-xl overflow-hidden border border-[#f20d0d]/20 bg-[#0f0808] group">
                             {/* Abstract Grid Background */}
                             <div className="absolute inset-0 bg-[linear-gradient(rgba(242,13,13,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(242,13,13,0.05)_1px,transparent_1px)] bg-size-[40px_40px]"></div>
-                            {/* Map Image + Pulse Dots */}
-                            <div className="absolute inset-0 flex items-center justify-center p-8">
-                                <div className="relative w-full h-full">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img
-                                        alt="Abstract dark stylized map of Indonesia with glowing red data points highlighting major cities"
-                                        className="w-full h-full object-contain opacity-60 mix-blend-lighten grayscale contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-700"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkg1aCMf82z0gfnQvFxZl8ip9CSu7pN4JwA0z5SYHSdIVl03DnWjHj2J_wt5bSnGSPuBHxSxzLnz2uAMgx1GITfhLY2jz8vHBokqs5mJqzQTeHXsrq_SxY1L10b8nrQ5PlCsP7H0rq0abOq-VyXddx2iRM6DuDVQrwNoyq_zMv3z7g8AzcBsn6c1WSwE1kPCNN44OrSJJU-ekPbgzCsy0akk88dVfdT1jf9FqZOAb-epKJZ0Sr_tuBhf3YUT3FGoYxOjx_Q8b2Krjg"
-                                    />
-                                    {/* Pulse Dots - positioned relative to the map image container */}
-                                    {/* Medan */}
-                                    <div className="absolute top-[28%] left-[18%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2 h-2 bg-[#f20d0d] rounded-full animate-ping [animation-delay:1s]"></div>
-                                        <div className="absolute inset-0 w-2 h-2 bg-[#f20d0d] rounded-full shadow-[0_0_6px_2px_rgba(242,13,13,0.4)]"></div>
-                                    </div>
-                                    {/* Jakarta */}
-                                    <div className="absolute top-[52%] left-[25%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-3 h-3 bg-[#f20d0d] rounded-full animate-ping"></div>
-                                        <div className="absolute inset-0 w-3 h-3 bg-[#f20d0d] rounded-full shadow-[0_0_10px_3px_rgba(242,13,13,0.6)]"></div>
-                                    </div>
-                                    {/* Yogyakarta */}
-                                    <div className="absolute top-[55%] left-[30%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2 h-2 bg-[#f20d0d] rounded-full animate-ping [animation-delay:0.3s]"></div>
-                                        <div className="absolute inset-0 w-2 h-2 bg-[#f20d0d] rounded-full shadow-[0_0_6px_2px_rgba(242,13,13,0.4)]"></div>
-                                    </div>
-                                    {/* Surabaya */}
-                                    <div className="absolute top-[53%] left-[35%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2.5 h-2.5 bg-[#f20d0d] rounded-full animate-ping [animation-delay:0.5s]"></div>
-                                        <div className="absolute inset-0 w-2.5 h-2.5 bg-[#f20d0d] rounded-full shadow-[0_0_8px_2px_rgba(242,13,13,0.5)]"></div>
-                                    </div>
-                                    {/* Bali */}
-                                    <div className="absolute top-[58%] left-[38%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2 h-2 bg-[#f20d0d] rounded-full animate-ping [animation-delay:2s]"></div>
-                                        <div className="absolute inset-0 w-2 h-2 bg-[#f20d0d] rounded-full shadow-[0_0_6px_2px_rgba(242,13,13,0.4)]"></div>
-                                    </div>
-                                    {/* Balikpapan / Kalimantan */}
-                                    <div className="absolute top-[38%] left-[40%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2 h-2 bg-[#f20d0d]/70 rounded-full animate-pulse [animation-delay:0.7s]"></div>
-                                    </div>
-                                    {/* Makassar */}
-                                    <div className="absolute top-[55%] left-[48%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2.5 h-2.5 bg-[#f20d0d] rounded-full animate-ping [animation-delay:1.5s]"></div>
-                                        <div className="absolute inset-0 w-2.5 h-2.5 bg-[#f20d0d] rounded-full shadow-[0_0_8px_2px_rgba(242,13,13,0.5)]"></div>
-                                    </div>
-                                    {/* Papua / Jayapura */}
-                                    <div className="absolute top-[38%] left-[82%] -translate-x-1/2 -translate-y-1/2">
-                                        <div className="w-2 h-2 bg-[#f20d0d]/60 rounded-full animate-pulse [animation-delay:1.2s]"></div>
-                                    </div>
-                                </div>
+
+                            {/* Interactive SVG Map */}
+                            <div className="absolute inset-0 p-8">
+                                <IndonesiaMap className="text-[#333] opacity-80" />
                             </div>
                         </div>
                     </div>
