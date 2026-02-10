@@ -40,7 +40,7 @@ export default function ProgramsPage() {
                                 className="absolute inset-0 z-0 h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                                 style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMwRI6OtSbs2qRb1AHnpO_e3KcHiZvGyrDCkDxc91No2MLYBJJ1w0R4BCI0a8WlxuPmQvQTqXgVj484Y-3Vx9HWntwwV-ot7-FCoPd3FSVhduiUkoniz3AIeeoE8KvOwx74NcR69cLzfhYafvgkIP-dydQ0oL9CQka3DOCojoI4Y_NL1LEzJM_f9JT4MCGDYsikah2c3Gyh3Zhnf6h3jI4d1gwW5LCFxG3P-1rSSYFtBJuNoyrquec-3MbyMoql9jj45Zq95FB7aLQ")' }}
                             />
-                            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                            <div className="absolute inset-0 z-10 bg-linear-to-t from-black/90 via-black/50 to-transparent"></div>
                             <div className="relative z-20 flex flex-col p-6 lg:p-8">
                                 <div className="mb-2 flex items-center gap-2">
                                     <span className="material-symbols-outlined text-[#f20d0d]">school</span>
@@ -62,7 +62,7 @@ export default function ProgramsPage() {
                                 className="absolute inset-0 z-0 h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                                 style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_-dDMa-ufnZC4RihvU6jwjqpZieoDAT7BmeGhkMsp6TEnOlR67l-dcC7xUhGX37rFxSklgh1s6iJDIjGPUssuV9BqO0Dikwoppq2q5vTNjIEkgsmF6P6IMDKgJ5Ypp2_CikvmDucHgBh0OKn8_KaJJBK4tnAqOlXaM2kTTZpD8p6hrrSjFz8bAe4pVCoh3nQgKl3kuNzfaLIIfIew-qGRAZZxlmRzFurhAbMLg_S98VEYFio_cBv2YAnV4LHOzy35TKrE41V3SJw5")' }}
                             />
-                            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/95 via-black/40 to-black/10"></div>
+                            <div className="absolute inset-0 z-10 bg-linear-to-t from-black/95 via-black/40 to-black/10"></div>
                             <div className="relative z-20 flex h-full flex-col justify-end p-6 lg:p-8">
                                 <div className="mb-auto border-b border-white/10 pb-4">
                                     <span className="text-5xl font-bold text-white/10 group-hover:text-[#f20d0d]/20 transition-colors">02</span>
@@ -98,7 +98,7 @@ export default function ProgramsPage() {
                                 </a>
                             </div>
                             {/* Abstract overlay pattern */}
-                            <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-[#f20d0d]/10 to-transparent opacity-50"></div>
+                            <div className="absolute right-0 top-0 h-full w-1/2 bg-linear-to-l from-[#f20d0d]/10 to-transparent opacity-50"></div>
                             <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-[#f20d0d] blur-[80px] opacity-20"></div>
                         </div>
 
@@ -123,7 +123,7 @@ export default function ProgramsPage() {
                                 className="absolute inset-0 z-0 h-full w-full bg-cover bg-center opacity-40 transition-opacity duration-500 group-hover:opacity-60"
                                 style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtEaf-XT1tzgHaCV7Zx2XXX520okJ12r56GiwVOH6Q_wTiyOosgt3u73z-Vp4fL0MxT4aTPNVc3QNfSFMGts1lwSDU8Jp2CnJmSZbe22_eBo1h8REXvwR6jkpBKsfUv11CC4y3yMeC_T1fYi4ToXd7syfrTdAAbXLiO31iXJkWmfxOFVMCFif1b0AHbnp1yCd12lN8iLASDEce55GFgpEZa3thOUI3CKW5u8hYhNVyLNmFLWHd_C9M-Qt4C_RejBp19kK8e-dKxDSZ")' }}
                             />
-                            <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#181111] via-[#181111]/80 to-transparent"></div>
+                            <div className="absolute inset-0 z-10 bg-linear-to-r from-[#181111] via-[#181111]/80 to-transparent"></div>
                             <div className="relative z-20 flex w-full max-w-3xl flex-col p-6 lg:p-10">
                                 <span className="mb-2 text-xs font-bold uppercase tracking-widest text-[#f20d0d]">Publikasi</span>
                                 <h3 className="mb-3 text-3xl font-bold text-white">Penerbitan &amp; Riset</h3>

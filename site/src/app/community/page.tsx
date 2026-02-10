@@ -13,7 +13,7 @@ export default function CommunityPage() {
                     className="absolute inset-0 z-0 bg-cover bg-center grayscale contrast-125"
                     style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1x0RNHaLzne0hj8eny-yZ1b2wGbFca4WJ8BXqeuQBDbu0-TxSjouDJwExRvd2Sb4kxUCUTR94WoUavAEjceMr6xlZXqGdbvlPyOfwVtxGI7R36sN3fNFUqAidVtVXcY5MaDjA5MWcAY9cpaJjrggRpweOXMTgKfj8cSwgIfHMkr9lyX7gmVwnewXDvwAbVuOKygKIF-0fIKE_B9hXw5pXmcSzmXTMMvDDVkS_MKJTYyWErfO4lFzuQlC7JJJZw5xaWAJ2IXbzrurl')` }}
                 ></div>
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#181111] via-[#181111]/80 to-transparent"></div>
+                <div className="absolute inset-0 z-10 bg-linear-to-t from-[#181111] via-[#181111]/80 to-transparent"></div>
 
                 <div className="relative z-20 flex flex-col items-center text-center max-w-4xl">
                     <span className="inline-block py-1 px-3 rounded-full bg-[#f20d0d]/20 border border-[#f20d0d]/40 text-[#f20d0d] text-xs font-bold uppercase tracking-widest mb-6">
@@ -21,7 +21,7 @@ export default function CommunityPage() {
                     </span>
                     <h1 className="text-5xl md:text-7xl lg:text-9xl font-black text-white leading-[0.9] tracking-tighter mb-8 uppercase">
                         Kami Adalah<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500">Malakan</span>
+                        <span className="text-transparent bg-clip-text bg-linear-to-r from-white via-gray-200 to-gray-500">Malakan</span>
                     </h1>
                     <p className="text-lg md:text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
                         Membangun Nalar Kritis Indonesia. Sebuah gerakan kolektif untuk masa depan bangsa yang lebih cerdas, logis, dan berdaya.
@@ -120,7 +120,7 @@ export default function CommunityPage() {
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                             style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzi2cHOeyYT9ri4dXlj9Do5I5Qv4SPn-3IZvTvVga2CAy86sd9kOo_v1EVRvAt4BDnA3JGsDUeP42XFEw8Z1y-wBQ_Ve2NeZ-By77LQpjkNxeKinoML6OLkB6q8OjeOPA1qsuChU5MuwkkWTk-54GehQRh-L6fYct65gK2YJYpve1J2zko6JlQU9eAHvDst8w-OHqeJJ4oePkL5GPC8-ht9BQUNJ1LLrK4uX_j9JBpil-q20B2g9KEByT39XecE4Q39ed4jb-FeSkh')` }}
                         ></div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-transparent"></div>
                         <div className="relative z-10 p-8 flex flex-col gap-3">
                             <span className="inline-block px-3 py-1 bg-[#f20d0d] text-white text-xs font-bold uppercase tracking-wider w-fit rounded">Event Bulanan</span>
                             <h3 className="text-2xl font-bold text-white group-hover:text-[#f20d0d] transition-colors">Debat Terbuka</h3>
@@ -136,7 +136,7 @@ export default function CommunityPage() {
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                             style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW9vuggK9uBCDxbI1i-3V6qbyyea6eqtntqJGZKxw8HVKEszjeDXSzgzDc6KpBFN3jNetxDruovbFyzzdg51jGUk-6YT1XEgAqkahSQxf-SG0m9krT4ZnXxQ-n2tPMAewZIHAZOI8muk5WrS3tN_g6ToQhtfP5JN3dQdyCMhJN9gX11fvM7-I-g_EtbB5hOcGyE7TJ5TbNMeSiTA-YrHnh1Oqy4wPBlchbTouWNImrbRqmMq2xOzXRIVBqWvrLbv8Z4t3qflAYPhHQ')` }}
                         ></div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-transparent"></div>
                         <div className="relative z-10 p-8 flex flex-col gap-3">
                             <span className="inline-block px-3 py-1 bg-white text-black text-xs font-bold uppercase tracking-wider w-fit rounded">Edukasi</span>
                             <h3 className="text-2xl font-bold text-white group-hover:text-[#f20d0d] transition-colors">Kelas Berpikir</h3>
@@ -152,7 +152,7 @@ export default function CommunityPage() {
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                             style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbUaoUFV70l7nZ-gi3lVIW5wtiF1YLgiMViQhg3RdrzTzgeSgK-5Ka1R78MP_0706mve3WpSHtwA6c9BDyaP2LlKAIn1iqLht_uII5-jpSMDgFTwQDnh2U2S1yHfZ4vnIn2A-BrlzvJmtmbtHCFXLXLY5AKaQ4j22bIPenzmMrCGVgYzrJAUPSUlTnHVNMj16Liy2RiAPVw0rKBve6FkAg_GFwk_FQ3RcV0-WOUKNjFDvI_EX1P1JwwNRIQ3oTqoABz6dlRQJeV5K3')` }}
                         ></div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-transparent"></div>
                         <div className="relative z-10 p-8 flex flex-col gap-3">
                             <span className="inline-block px-3 py-1 bg-white text-black text-xs font-bold uppercase tracking-wider w-fit rounded">Networking</span>
                             <h3 className="text-2xl font-bold text-white group-hover:text-[#f20d0d] transition-colors">Kopi Darat</h3>

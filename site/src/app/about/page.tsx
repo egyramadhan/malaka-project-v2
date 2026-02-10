@@ -50,14 +50,14 @@ export default function AboutPage() {
                     <div className="lg:col-span-5 relative h-full min-h-[400px] flex items-center justify-center">
                         {/* Abstract graphic element */}
                         <div className="absolute inset-0 bg-[#f20d0d]/10 blur-[100px] rounded-full"></div>
-                        <div className="relative w-full aspect-[4/5] overflow-hidden rounded-lg grayscale-img group">
+                        <div className="relative w-full aspect-4/5 overflow-hidden rounded-lg grayscale-img group">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 alt="Group of serious young people discussing in a dimly lit industrial style room"
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDptIKxRjEGBeX-_TS8oKfKroH8GlrME7HFO24e7iJ7mjCFMRtCJwEF-p5ws87EYaEQVTXkEnoDAyWVQyn7KTk3pX_HoA0hIdoF4Gby1NL3HTsWEVLC7SxjytuPVcC3YbjnOfLZnvMdGk_JdpYUgk2MguQewwlD3OdSEmIEL8hxJMxVxB4lLSoNyOb5jzynMexgQpKfth4TdL-aYDagyi-4slu7TKul0OWLoBXY8UWUsPrXw31ASclf-sOmeWWPWhZG2ibQ5e2IWHmz"
                             />
-                            <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
+                            <div className="absolute bottom-0 left-0 w-full p-6 bg-linear-to-t from-black/90 to-transparent">
                                 <p className="text-white text-sm font-mono uppercase tracking-widest">Diskusi Publik Vol. 1</p>
                             </div>
                         </div>
@@ -119,14 +119,14 @@ export default function AboutPage() {
                         {/* Image/Portrait Side */}
                         <div className="order-2 lg:order-1 relative">
                             <div className="absolute -inset-4 bg-[#f20d0d]/20 rounded-lg rotate-3 z-0"></div>
-                            <div className="relative z-10 aspect-[3/4] bg-[#1a1a1a] rounded-lg overflow-hidden border border-[#392828]">
+                            <div className="relative z-10 aspect-3/4 bg-[#1a1a1a] rounded-lg overflow-hidden border border-[#392828]">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     alt="Portrait of Tan Malaka"
                                     className="object-cover w-full h-full grayscale mix-blend-luminosity"
                                     src="/tanmalaka.png"
                                 />
-                                <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black to-transparent">
+                                <div className="absolute bottom-0 left-0 w-full p-8 bg-linear-to-t from-black to-transparent">
                                     <h3 className="text-white text-3xl font-bold uppercase">Tan Malaka</h3>
                                     <p className="text-[#f20d0d] font-mono text-sm mt-1">1897 - 1949</p>
                                 </div>
@@ -135,11 +135,11 @@ export default function AboutPage() {
                         {/* Text Side */}
                         <div className="order-1 lg:order-2">
                             <div className="flex items-center gap-4 mb-6">
-                                <span className="h-[1px] w-12 bg-gray-500"></span>
+                                <span className="h-px w-12 bg-gray-500"></span>
                                 <span className="text-gray-400 uppercase tracking-widest text-sm font-bold">Inspirasi Kami</span>
                             </div>
                             <h2 className="text-4xl md:text-6xl font-black uppercase text-white mb-8 leading-tight">
-                                Semangat <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f20d0d] to-red-900">Madilog</span>
+                                Semangat <span className="text-transparent bg-clip-text bg-linear-to-r from-[#f20d0d] to-red-900">Madilog</span>
                             </h2>
                             <blockquote className="text-xl md:text-2xl font-light text-gray-300 italic mb-8 border-l-4 border-[#f20d0d] pl-6 py-2">
                                 &quot;Tujuan pendidikan itu untuk mempertajam kecerdasan, memperkukuh kemauan serta memperhalus perasaan.&quot;
@@ -176,7 +176,7 @@ export default function AboutPage() {
                             <h2 className="text-4xl font-bold uppercase tracking-tight text-white">Misi Kami</h2>
                             <p className="text-gray-500 mt-2 max-w-md">Langkah konkret yang kami ambil setiap hari untuk mewujudkan visi.</p>
                         </div>
-                        <div className="h-[1px] flex-1 bg-[#392828] mx-8 mb-2 hidden md:block"></div>
+                        <div className="h-px flex-1 bg-[#392828] mx-8 mb-2 hidden md:block"></div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Mission 1 */}

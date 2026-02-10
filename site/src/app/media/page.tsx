@@ -70,7 +70,7 @@ export default function MediaPage() {
         <>
             <Navbar />
 
-            <main className="flex-grow w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-20 py-8 pt-24">
+            <main className="grow w-full max-w-[1440px] mx-auto px-4 md:px-10 lg:px-20 py-8 pt-24">
                 {/* Hero Title */}
                 <section className="flex flex-col gap-4 mb-10 mt-4 border-b border-[#392828] pb-10">
                     <div className="flex flex-wrap justify-between items-end gap-6">
@@ -89,14 +89,14 @@ export default function MediaPage() {
                 </section>
 
                 {/* Filters */}
-                <section className="flex gap-3 mb-10 overflow-x-auto pb-2 sticky top-[70px] z-40 bg-[#181111]/90 backdrop-blur-sm py-2 -mx-4 px-4 md:-mx-0 md:px-0 hide-scrollbar">
+                <section className="flex gap-3 mb-10 overflow-x-auto pb-2 sticky top-[70px] z-40 bg-[#181111]/90 backdrop-blur-sm py-2 -mx-4 px-4 md:mx-0 md:px-0 hide-scrollbar">
                     {categories.map((cat) => (
                         <button
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
                             className={`flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 transition-all ${activeCategory === cat
-                                    ? "border border-[#f20d0d] bg-[#f20d0d] hover:scale-105 active:scale-95"
-                                    : "border border-[#392828] bg-[#221616] hover:border-[#ba9c9c] hover:bg-[#2a1c1c]"
+                                ? "border border-[#f20d0d] bg-[#f20d0d] hover:scale-105 active:scale-95"
+                                : "border border-[#392828] bg-[#221616] hover:border-[#ba9c9c] hover:bg-[#2a1c1c]"
                                 }`}
                         >
                             <p className={`text-sm font-${activeCategory === cat ? "bold" : "medium"} uppercase tracking-wide ${activeCategory === cat ? "text-white" : "text-[#ba9c9c]"
@@ -115,7 +115,7 @@ export default function MediaPage() {
                                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                                 style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-rrj-xkB1qoI097g8FlZHPN1B4w988SY5nBmhLGhG54uZBQVfxKpnkLWJS4EaiJMYgJLL7MdEk3JtulbTUu3oFGFJDYUyMIZKSwpCG44WGAjj6F4OEc4_0amlSYihz0UhmyxXLz-vXc0-Jkyz25p3kCoSVoCUCNv736kAHIs2Oa5KrOfclk5dhsfOMmbDCglcCkCtJJfDqFrkU5PtO-5Aftm7_yHv8HPH0-6ZbwBdyIU5gq33yr2Cx-Bh7Js0PjvDvYXVs9dbhZtM')" }}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent md:bg-gradient-to-r md:from-transparent md:to-[#221616]"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent md:bg-linear-to-r md:from-transparent md:to-[#221616]"></div>
                             {/* Play Button Overlay */}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div className="w-16 h-16 rounded-full bg-[#f20d0d]/90 flex items-center justify-center backdrop-blur-sm shadow-[0_0_30px_rgba(242,13,13,0.4)]">
@@ -152,7 +152,7 @@ export default function MediaPage() {
                 <div className="flex items-center gap-4 mb-8">
                     <span className="material-symbols-outlined text-[#f20d0d]">grid_view</span>
                     <h3 className="text-xl font-bold text-white uppercase tracking-wider">Terbaru</h3>
-                    <div className="h-px bg-[#392828] flex-grow ml-2"></div>
+                    <div className="h-px bg-[#392828] grow ml-2"></div>
                 </div>
 
                 {/* Content Grid */}
@@ -166,7 +166,7 @@ export default function MediaPage() {
                                 />
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                                 <div className="absolute bottom-3 right-3 bg-black/80 px-2 py-1 rounded text-xs font-bold text-white">{card.duration}</div>
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#f20d0d]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-linear-to-t from-[#f20d0d]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             </div>
                             <div className="flex flex-col gap-1">
                                 <div className="flex justify-between items-center">
